@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./img/placeholder.png">
+    <title>Ip Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title text-white">Ip Tracker</h1>
+      <img src="./img/placeholder.png" alt="icon" width="40px" class="ml-1" />
+    </header>
+    <div class="main-container">
+      <div class="main-content">
+        <form id="lookupForm">
+          <div class="d-flex mt-2">
+            <h2 class="ip-display text-white">Ip Address:</h2>
+            <input
+              id="inputIp"
+              type="text"
+              placeholder="write or paste an ip address"
+              class="ml-1"
+            />
+          </div>
+          <button type="submit" class="btn mt-2">
+            <span>&#x26c4;&#xfe0e; Lookup Ip</span>
+          </button>
+        </form>
+        <div id="map" class="mb-5 mt-2"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="m-5">
+        Icons made by
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <p class="m-5">designed and developed by Eduardo Talavera 👽 👾</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
